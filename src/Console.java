@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Console {
-    private static final Stack<Authors> stack = new Stack<>();
+    private static final Stack<Visitors> stack = new Stack<>();
     private static final Console sample = new Console();
 
     public static Console getSample() {
@@ -21,7 +21,7 @@ public class Console {
         System.out.println("How many companions with the Author?  ");
         int companions = input.nextInt();
 
-        Authors author = stack.push(new Authors(surname, name, companions, null));
+        Visitors author = stack.push(new Visitors(surname, name, companions, null));
         System.out.println("Author is added to the list.");
         show();
     }

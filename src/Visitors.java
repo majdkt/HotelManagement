@@ -1,11 +1,11 @@
-class Authors {
+class Visitors {
 
     private String surname;
     private String name;;
     private Integer companions;
-    private Authors next;
+    private Visitors next;
 
-    public Authors(String surname, String name, Integer companions, Authors next) {
+    public Visitors(String surname, String name, Integer companions, Visitors next) {
         this.surname = surname;
         this.name = name;
         this.companions = companions;
@@ -24,11 +24,11 @@ class Authors {
         this.companions = companions;
     }
 
-    public void setNext(Authors e) {
+    public void setNext(Visitors e) {
         next = e;
     }
 
-    public Authors getNext() {
+    public Visitors getNext() {
         return next;
     }
 

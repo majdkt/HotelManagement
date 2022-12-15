@@ -21,7 +21,7 @@ public class Stack<clients> {
         return top.author;
     }
 
-    public Authors push(clients clients) {
+    public Visitors push(clients clients) {
         Author aktuell = top;
         top = new Author();
         top.author = clients;
